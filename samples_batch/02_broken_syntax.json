@@ -1,0 +1,10 @@
+{
+  "name": "add",
+  "capability": "arithmetic",
+  "description": "Add two integers.",
+  "inputs":  [{"name":"a","type":"int","value":2},{"name":"b","type":"int","value":3}],
+  "outputs": [{"name":"result","type":"int","value":5}],
+  "expected_verdict": "REJECT",
+  "expected_reject_stage": "S1_parse",
+  "note": "SyntaxError - S1 should catch"
+}

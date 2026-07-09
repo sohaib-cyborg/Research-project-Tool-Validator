@@ -1,0 +1,10 @@
+{
+  "name": "average",
+  "capability": "statistics",
+  "description": "Compute the arithmetic mean of a list of numbers.",
+  "inputs":  [{"name":"numbers","type":"list[float]","value":[]}],
+  "outputs": [{"name":"result","type":"float","value":0.0}],
+  "expected_verdict": "REJECT",
+  "expected_reject_stage": "S3_testgen",
+  "note": "empty list -> division by zero. S3-replay: crashes_on_example"
+}

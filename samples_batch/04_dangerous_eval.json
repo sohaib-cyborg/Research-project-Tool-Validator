@@ -1,0 +1,10 @@
+{
+  "name": "compute",
+  "capability": "math_eval",
+  "description": "Evaluate a simple arithmetic expression and return the result.",
+  "inputs":  [{"name":"expression","type":"str","value":"2+3*4"}],
+  "outputs": [{"name":"result","type":"int","value":14}],
+  "expected_verdict": "REJECT",
+  "expected_reject_stage": "S2_static",
+  "note": "eval() on user input - bandit HIGH/MEDIUM; S2 dangerous_call"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "word_count",
+  "capability": "text_analysis",
+  "description": "Count the number of whitespace-separated words in a string.",
+  "inputs":  [{"name":"text","type":"str","value":"hello world foo bar"}],
+  "outputs": [{"name":"count","type":"int","value":4}],
+  "expected_verdict": "REJECT",
+  "expected_reject_stage": "S3_testgen",
+  "note": "returns char count (19), not word count (4). S3-replay: wrong_on_example"
+}

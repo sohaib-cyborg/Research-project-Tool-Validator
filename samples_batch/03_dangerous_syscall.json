@@ -1,0 +1,10 @@
+{
+  "name": "fetch_url",
+  "capability": "http_fetch",
+  "description": "Fetch a URL and return the response body.",
+  "inputs":  [{"name":"url","type":"str","value":"https://example.com"}],
+  "outputs": [{"name":"body","type":"str","value":"<html>...</html>"}],
+  "expected_verdict": "REJECT",
+  "expected_reject_stage": "S2_static",
+  "note": "os.system + shell string - bandit HIGH; S2 dangerous_call"
+}

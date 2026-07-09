@@ -1,0 +1,10 @@
+{
+  "name": "is_palindrome",
+  "capability": "string_check",
+  "description": "Return True if the input string is a palindrome, False otherwise.",
+  "inputs":  [{"name":"s","type":"str","value":"racecar"}],
+  "outputs": [{"name":"result","type":"bool","value":true}],
+  "expected_verdict": "REJECT",
+  "expected_reject_stage": "S3_testgen",
+  "note": "s[:-1] instead of s -> False on 'racecar'. S3-replay: wrong_on_example"
+}

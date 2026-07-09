@@ -1,0 +1,10 @@
+{
+  "name": "celsius_to_fahrenheit",
+  "capability": "unit_conversion",
+  "description": "Convert a list of Celsius temperatures to Fahrenheit.",
+  "inputs":  [{"name":"temps","type":"list[float]","value":[0, 100]}],
+  "outputs": [{"name":"result","type":"list[float]","value":[32.0, 212.0]}],
+  "expected_verdict": "ACCEPT",
+  "expected_reject_stage": null,
+  "note": "clean tool - should pass every stage"
+}
